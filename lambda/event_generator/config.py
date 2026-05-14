@@ -29,3 +29,7 @@ SEVERITY_DISTRIBUTION = {
     "HIGH": 15,
     "CRITICAL": 5
 }
+
+EVENT_BUS_NAME = "cloudwatchx-dev-eventbus"
+
+QUEUE_URL = "https://sqs.us-east-1.amazonaws.com/893555057239/cloudwatchx-dev-incident-dlq"
