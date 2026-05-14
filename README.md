@@ -184,12 +184,13 @@ This project demonstrates several real-world cloud engineering concepts:
 cloudwatchx/
 │
 ├── architecture/
-├── dashboards/
-├── docs/
 ├── events/
+├     └──sample_events
 ├── lambda/
-├── monitoring/
+├     ├── event_generator
+├     └── incident_processor
 ├── screenshots/
+├── gitignore/
 └── README.md
 ```
 
