@@ -65,6 +65,9 @@ def lambda_handler(event, context):
 
     detail = event.get("detail", {})
 
+    # if detail.get("severity") == "CRITICAL":
+    #     raise Exception("Simulated critical incident processing failure")
+
     structured_log = {
         "incident_id": detail.get("incident_id"),
         "service_name": detail.get("service_name"),
