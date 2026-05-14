@@ -184,11 +184,20 @@ This project demonstrates several real-world cloud engineering concepts:
 cloudwatchx/
 │
 ├── architecture/
+│     └──  diagrams
 ├── events/
-├     └──sample_events
+│     └──sample_events
 ├── lambda/
-├     ├── event_generator
-├     └── incident_processor
+│     ├── event_generator
+│     │     ├── config.py
+│     │     ├── dlq_recovery.py
+│     │     ├── export_engine.py
+│     │     ├── generator.py
+│     │     ├── replay_engine.py
+│     │     └── requirements.txt
+│     └── incident_processor
+│     │     ├── lamdba_function.py
+│     │     └── requirements.txt
 ├── screenshots/
 ├── gitignore/
 └── README.md
